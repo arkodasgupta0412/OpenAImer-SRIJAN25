@@ -16,22 +16,12 @@ Your challenge is to implement and improve upon supervised contrastive learning 
 
 The supervised contrastive loss in outer summation form is defined as:
 
-$$
-\mathcal{L}_{\text{sup}} = \sum_{i \in I} \frac{-1}{|P(i)|} \sum_{p \in P(i)} \log \frac{\exp(z_i \cdot z_p / \tau)}{\sum_{a \in A(i)} \exp(z_i \cdot z_a / \tau)}
-$$
+![Outer Loss](https://latex.codecogs.com/png.image?\dpi{110}L_{sup}=\sum_{i\in%20I}%20\frac{-1}{|P(i)|}%20\sum_{p\in%20P(i)}%20\log\frac{\exp(z_i\cdot%20z_p/\tau)}{\sum_{a\in%20A(i)}\exp(z_i\cdot%20z_a/\tau)})
 
-Where:
-- \( I \): set of all indices in the batch
-- \( P(i) \): indices of all positives of anchor \( i \)
-- \( A(i) \): set of all positives and negatives for anchor \( i \)
-- \( z \): normalized feature representations
-- \( \tau \): temperature parameter
 
 An equivalent but computationally optimized inner summation form is:
 
-$$
-\mathcal{L}_{\text{sup}} = \sum_{i \in I} \log \left( \frac{\sum_{a \in A(i)} \exp(z_i \cdot z_a / \tau)}{\sum_{p \in P(i)} \exp(z_i \cdot z_p / \tau)} \right)
-$$
+![Inner Loss](https://latex.codecogs.com/png.image?\dpi{110}L_{sup}=\sum_{i\in%20I}%20\log\left(\frac{\sum_{a\in%20A(i)}%20\exp(z_i\cdot%20z_a/\tau)}{\sum_{p\in%20P(i)}%20\exp(z_i\cdot%20z_p/\tau)}\right))
 
 This version flips the numerator and denominator to emphasize the contrast between all samples and positive pairs.
 
