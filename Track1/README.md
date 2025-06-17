@@ -14,6 +14,27 @@ Your challenge is to implement and improve upon supervised contrastive learning 
 
 ## The Mathematical Foundation
 
+The supervised contrastive loss in outer summation form is defined as:
+
+$$
+\mathcal{L}_{\text{sup}} = \sum_{i \in I} \frac{-1}{|P(i)|} \sum_{p \in P(i)} \log \frac{\exp(z_i \cdot z_p / \tau)}{\sum_{a \in A(i)} \exp(z_i \cdot z_a / \tau)}
+$$
+
+Where:
+- \( I \): set of all indices in the batch
+- \( P(i) \): indices of all positives of anchor \( i \)
+- \( A(i) \): set of all positives and negatives for anchor \( i \)
+- \( z \): normalized feature representations
+- \( \tau \): temperature parameter
+
+An equivalent but computationally optimized inner summation form is:
+
+$$
+\mathcal{L}_{\text{sup}} = \sum_{i \in I} \log \left( \frac{\sum_{a \in A(i)} \exp(z_i \cdot z_a / \tau)}{\sum_{p \in P(i)} \exp(z_i \cdot z_p / \tau)} \right)
+$$
+
+This version flips the numerator and denominator to emphasize the contrast between all samples and positive pairs.
+
 ## Key Properties
 
 ### The supervised contrastive approach offers several advantages:
