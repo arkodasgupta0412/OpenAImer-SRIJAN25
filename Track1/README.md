@@ -2,15 +2,15 @@
 
 #### Novel Image classification competition
 
-## Description
+### Description
 
 ## Background
 
-#### Traditional image classification approaches typically rely on softmax cross-entropy loss which doesn't explicitly optimize the structure of the feature space. This competition focuses on the emerging paradigm of supervised contrastive learning , which combines the strengths of contrastive representation learning with label information to create more robust and discriminative features.
+Traditional image classification approaches typically rely on softmax cross-entropy loss which doesn't explicitly optimize the structure of the feature space. This competition focuses on the emerging paradigm of supervised contrastive learning , which combines the strengths of contrastive representation learning with label information to create more robust and discriminative features.
 
 ## Problem Description
 
-#### Your challenge is to implement and improve upon supervised contrastive learning for image classification. Unlike self-supervised contrastive learning which only treats augmentations of the same image as positives, supervised contrastive learning leverages class labels to treat all samples from the same class as positives.
+Your challenge is to implement and improve upon supervised contrastive learning for image classification. Unlike self-supervised contrastive learning which only treats augmentations of the same image as positives, supervised contrastive learning leverages class labels to treat all samples from the same class as positives.
 
 ## The Mathematical Foundation
 
