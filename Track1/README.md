@@ -16,12 +16,12 @@ Your challenge is to implement and improve upon supervised contrastive learning 
 
 The supervised contrastive loss in outer summation form is defined as:
 
-![Outer Loss](https://latex.codecogs.com/png.image?\dpi{110}color{White}L_{sup}=\sum_{i\in%20I}%20\frac{-1}{|P(i)|}%20\sum_{p\in%20P(i)}%20\log\frac{\exp(z_i\cdot%20z_p/\tau)}{\sum_{a\in%20A(i)}\exp(z_i\cdot%20z_a/\tau)})
+![Outer Loss](https://latex.codecogs.com/png.image?\dpi{150}&space;\color{White}L_{sup}=\sum_{i\in%20I}\frac{-1}{|P(i)|}\sum_{p\in%20P(i)}\log\frac{\exp(z_i\cdot%20z_p/\tau)}{\sum_{a\in%20A(i)}\exp(z_i\cdot%20z_a/\tau)})
 
 
 An equivalent but computationally optimized inner summation form is:
 
-![Inner Loss](https://latex.codecogs.com/png.image?\dpi{110}color{White}L_{sup}=\sum_{i\in%20I}%20\log\left(\frac{\sum_{a\in%20A(i)}%20\exp(z_i\cdot%20z_a/\tau)}{\sum_{p\in%20P(i)}%20\exp(z_i\cdot%20z_p/\tau)}\right))
+![Inner Loss](https://latex.codecogs.com/png.image?\dpi{150}&space;\color{White}L_{sup}=\sum_{i\in%20I}\log\left(\frac{\sum_{a\in%20A(i)}\exp(z_i\cdot%20z_a/\tau)}{\sum_{p\in%20P(i)}\exp(z_i\cdot%20z_p/\tau)}\right))
 
 This version flips the numerator and denominator to emphasize the contrast between all samples and positive pairs.
 
