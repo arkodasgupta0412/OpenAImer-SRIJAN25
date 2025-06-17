@@ -2,7 +2,7 @@
 
 #### Novel Image classification competition
 
-### Description
+# Description
 
 ## Background
 
