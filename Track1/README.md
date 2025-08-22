@@ -10,7 +10,7 @@ Traditional image classification approaches typically rely on softmax cross-entr
 
 ## Problem Description
 
-Your challenge is to implement and improve upon supervised contrastive learning for image classification. Unlike self-supervised contrastive learning which only treats augmentations of the same image as positives, supervised contrastive learning leverages class labels to treat all samples from the same class as positives.
+Our challenge was to implement and improve upon supervised contrastive learning for image classification. Unlike self-supervised contrastive learning which only treats augmentations of the same image as positives, supervised contrastive learning leverages class labels to treat all samples from the same class as positives.
 
 ## The Mathematical Foundation
 
@@ -43,12 +43,12 @@ This version flips the numerator and denominator to emphasize the contrast betwe
 
 ## Challenge
 
-### Your task is to:
-- Implement a supervised contrastive learning framework for image classification
-- Explore modifications to the base loss function to improve performance
-- Investigate the impact of different architectural choices on representation quality
-- Develop techniques to effectively balance positive and negative examples
-- Analyze the resulting embedding space and classification performance
+### Task:
+- Implemented a supervised contrastive learning framework for image classification
+- Explored modifications to the base loss function to improve performance
+- Investigated the impact of different architectural choices on representation quality
+- Developed techniques to effectively balance positive and negative examples
+- Analyzed the resulting embedding space and classification performance
 
 ## Evaluation
-## The solutions will be judged based on F1-scores.
+## The solutions was judged based on F1-scores.
