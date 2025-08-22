@@ -61,4 +61,3 @@ ShadowBeast0
 - [Original ResNet18 Documentation](https://pytorch.org/hub/pytorch_vision_resnet/)
 - [Model Compression Techniques Overview](https://arxiv.org/abs/1710.09282)
 - [Baseline Performance Metrics](BASELINE.md)
-- 
