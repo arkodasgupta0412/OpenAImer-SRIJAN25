@@ -42,7 +42,8 @@ Each metric is normalized relative to the original ResNet18 baseline performance
 The validation dataset was hosted privately on Kaggle and will be accessed securely during evaluation. The dataset consists of standard validation images similar to the training set for classification.
 
 ## Leaderboard
-The current leaderboard can be found in [LEADERBOARD.md](LEADERBOARD.md). It is automatically updated with each successful submission and ranks participants by their final score.
+The current leaderboard can be found in [LEADERBOARD.md](LEADERBOARD.md). It is automatically updated with each successful submission and ranks participants by their final score. Our model is in the name of
+ShadowBeast0
 
 ## Important Dates
 - Competition Start: 12-April-2025 6:00 PM IST
