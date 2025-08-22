@@ -51,4 +51,4 @@ This version flips the numerator and denominator to emphasize the contrast betwe
 - Analyzed the resulting embedding space and classification performance
 
 ## Evaluation
-## The solutions was judged based on F1-scores.
+## The solution was judged based on F1-scores.
